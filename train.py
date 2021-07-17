@@ -108,6 +108,6 @@ if __name__ == '__main__':
     agent = TD3(device, obs_size, act_size)
     print("agent create successfully")
 
-    train(agent, env, n_episodes=10, n_random_episodes=10)
+    train(agent, env, n_episodes=1000, n_random_episodes=10)
 
     torch.save(agent, '/home/feng1909/test.pth')
